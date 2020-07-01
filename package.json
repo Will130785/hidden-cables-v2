@@ -1,0 +1,16 @@
+{
+  "name": "hidden-cables-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch src/scss/main.scss src/css/style.css",
+    "server": "live-server",
+    "start": "npm-run-all --parallel sass server"
+  },
+  "author": "Will Constable",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
