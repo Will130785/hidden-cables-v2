@@ -1,0 +1,144 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    background-color: #001d2d;
+    position: fixed;
+    width: 100%;
+
+    &-logo {
+        width: 20rem;
+        height: auto;
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+
+        //Hide navlinks when screen is less than 900px
+        @media only screen and (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    &-item {
+        list-style: none;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        transition: all .4s;
+
+        &__home {
+            background-color: #7cbb00;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__about {
+            background-color: #009cea;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__services {
+            background-color: #a903b3;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__works {
+            background-color: #ffbb00;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__contact {
+            background-color: #ec4f13;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &-item:hover {
+        padding-right: 5rem;
+        cursor: pointer;
+    }
+
+    &-link {
+        font-size: 2rem;
+        color: #fff;
+    }
+}
+
+//Hamburger styling
+.hamburger--collapse {
+    display: none;
+
+    //Display when screen is less than 900px
+    @media only screen and (max-width: 900px) {
+        display: block;
+        align-self: center;
+    }
+
+    //Set color when inactive
+    span.bar::before {
+       background-color: #fff;
+      }
+
+}
+
+.hamburger--collapse.active {
+
+    //Set color for active
+    span.bar:first-child::before {
+       background-color: #fff;
+      }
+
+    span.bar:nth-child(3)::before {
+        background-color: #fff;
+        }
+
+}
+
+//Set color on hover
+.hamburger:hover > .inner:first-child::after,
+.hamburger:hover > .inner:first-child::before,
+.hamburger.hover > .inner:nth-child(2)::after,
+.hamburger:hover > .inner:nth-child(2)::before,
+.hamburger:hover > .inner:nth-child(3)::after,
+.hamburger:hover > .inner:nth-child(3)::before,
+.hamburger:hover span.bar:first-child::after,
+.hamburger:hover span.bar:first-child::before,
+.hamburger:hover span.bar:nth-child(2):after,
+.hamburger:hover span.bar:nth-child(2):before,
+.hamburger:hover span.bar:nth-child(3):after,
+.hamburger:hover span.bar:nth-child(3):before {
+    background-color: #fff;
+}
+
+//Dropdowm mobile navlinks
+.mobile-nav {
+    transition: all 1s;
+    position: fixed;
+    top: 9rem;
+    width: 100%;
+}
+
+.mobile__nav-links {
+    height: 0;
+    overflow: hidden;
+    background-color: #001d2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.mobile__nav-item {
+    margin: 3rem 0;
+}
+
+.mobile__nav-link {
+    color: #fff;
+    font-size: 3rem;
+}

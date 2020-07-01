@@ -6,10 +6,116 @@
     <title>Hidden Cables</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="src/css/hamburgers.min.css" type="text/css">
     <link rel="stylesheet" href="src/css/style.css" type="text/css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- Navbar -->
+    <nav class="nav">
+        <!-- Brand -->
+        <a class="nav-brand">
+            <img class="nav-logo" src="src/img/hclogo.png" alt="Logo">
+        </a>
+
+        <!-- Links -->
+        <ul class="nav-links">
+            <li class="nav-item nav-item__home">
+                <a class="nav-link">Home</a>
+            </li>
+            <li class="nav-item nav-item__about">
+                <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item nav-item__services">
+                <a class="nav-link">Services</a>
+            </li>
+            <li class="nav-item nav-item__works">
+                <a class="nav-link">Works</a>
+            </li>
+            <li class="nav-item nav-item__contact">
+                <a class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Hamburger -->
+        <button class="hamburger hamburger--collapse" type="button" aria-label="menu">
+            <div class="inner">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </button>
+    </nav>
+    <!-- Mobile Nav - Hidden until screen is less than 900px -->
+    <nav class="mobile-nav">
+        <!-- Links -->
+        <ul class="mobile__nav-links">
+            <li class="mobile__nav-item mobile__nav-item--home">
+                <a class="mobile__nav-link">Home</a>
+            </li>
+            <li class="mobile__nav-item mobiel__nav-item--about">
+                <a class="mobile__nav-link">About</a>
+            </li>
+            <li class="mobile__nav-item mobile__nav-item--services">
+                <a class="mobile__nav-link">Services</a>
+            </li>
+            <li class="mobile__nav-item mobile__nav-item--works">
+                <a class="mobile__nav-link">Works</a>
+            </li>
+            <li class="mobile__nav-item mobile__nav-item--contact">
+                <a class="mobile__nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+        <!-- About -->
+        <section class="about rellax">
+
+        </section>
+
+        <!-- Services -->
+        <section class="services rellax" data-rellax-speed="7">
+
+        </section>
+
+        <!-- Works gallery -->
+        <section class="works rellax" data-rellax-speed="1">
+
+        </section>
+
+        <!-- Contact -->
+        <section class="contact rellax" data-rellax-speed="4">
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+    </footer>
+
+    <!-- <div class="rellax">
+        I’m that default chill speed of "-2"
+      </div>
+      <div class="rellax" data-rellax-speed="7">
+        I’m super fast!!
+      </div>
+      <div class="rellax" data-rellax-speed="-4">
+        I’m extra slow and smooth
+      </div> -->
+      
+      <script src="src/js/rellax.min.js"></script>
+      <script>
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+      </script>
     
     <!-- Scripts -->
     <script src="src/js/app.js"></script>
