@@ -1,0 +1,33 @@
+.footer {
+    background-color: #001d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+
+    &__left {
+        color: #fff;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+
+        h4 {
+            font-size: 1.6rem;
+            margin: 1rem 0;
+        }
+    }
+
+    &__logo {
+
+        &--pic {
+            width: 20rem;
+            height: auto;
+        }
+    }
+}

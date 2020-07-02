@@ -1,6 +1,12 @@
 //PARTIAL IMPORTS
 @import "base/base";
 
+@import "components/banner";
+@import "components/gallery";
 @import "components/navbar";
 
+@import "layout/about";
+@import "layout/contact";
+@import "layout/footer";
 @import "layout/header";
+@import "layout/services";
