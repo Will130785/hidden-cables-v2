@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&family=Roboto:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +60,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .main {
@@ -70,6 +71,7 @@ body {
   background-color: #001d2d;
   color: #fff;
   padding: 5rem;
+  margin-bottom: 10rem;
 }
 .banner h2 {
   font-size: 3rem;
@@ -281,6 +283,7 @@ body {
 .mobile__nav-link {
   color: #fff;
   font-size: 3rem;
+  text-decoration: none;
 }
 
 .about {
@@ -292,6 +295,18 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 3rem;
   padding: 5rem 5rem;
+}
+@media only screen and (max-width: 900px) {
+  .about__intro {
+    grid-template-columns: 1fr;
+    grid-row-gap: 5rem;
+    padding: 5rem 2rem;
+  }
+}
+.about__intro--wording {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .about__intro--wording p {
   font-size: 2rem;
@@ -343,6 +358,25 @@ body {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #7dbb00;
+  border-left: 1px solid #7dbb00;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ffbb00;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #ffa600;
 }
 
 .footer {
@@ -434,11 +468,11 @@ body {
   }
 }
 .services__container--wording h3 {
-  font-size: 4rem;
-  margin-bottom: 3rem;
+  font-size: 5rem;
+  margin-bottom: 5rem;
 }
 .services__container--wording p {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 .services__container--wording-1 {

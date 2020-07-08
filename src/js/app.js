@@ -3,7 +3,8 @@ const site = {
     elements: {
         hamburger: document.querySelector(".hamburger"),
         deskNav: document.querySelector(".nav-links"),
-        mobileNav: document.querySelector(".mobile__nav-links")
+        mobileNav: document.querySelector(".mobile__nav-links"),
+        mobileLinks: document.querySelectorAll(".mobile__nav-link")
     }
 }
 //Hamburger and navbar functionality
@@ -33,4 +34,7 @@ function screenResize() {
 
 //Event listeners
 site.elements.hamburger.onclick = toggleActive;
+site.elements.mobileLinks.forEach(link => {
+    link.onclick = toggleActive;
+});
 window.addEventListener("resize", screenResize);

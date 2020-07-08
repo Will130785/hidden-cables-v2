@@ -1,3 +1,6 @@
+//Imported fonts
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto:wght@300;400;700&display=swap');
+
 //GLOBAL RESET
 * {
     margin: 0;
@@ -52,7 +55,7 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main {
