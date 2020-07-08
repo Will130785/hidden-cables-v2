@@ -1,7 +1,51 @@
 .contact {
+    padding-top: 10rem;
 
     &__content {
         display: grid;
         grid-template-columns: 40% 60%;
+        padding: 5rem;
+
+        @media only screen and (max-width: 900px) {
+            grid-template-columns: 100%;
+        }
+
+        &--details {
+
+
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+
+            h4 {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+
+            @media only screen and (max-width: 900px) {
+                padding: 3rem 0;
+            }
+        }
+
+        &--form {
+            width: 100%;
+
+            label {
+                font-size: 1.4rem;
+            }
+        }
     }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }

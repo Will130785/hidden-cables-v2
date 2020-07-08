@@ -5,6 +5,12 @@
     align-items: center;
     padding: 5rem;
 
+    @media only screen and (max-width: 900px) {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+
     &__left {
         color: #fff;
 
@@ -21,9 +27,19 @@
             font-size: 1.6rem;
             margin: 1rem 0;
         }
+
+        @media only screen and (max-width: 900px) {
+            grid-row: 2 / 3;
+            text-align: center;
+        }
     }
 
     &__logo {
+
+        @media only screen and (max-width: 900px) {
+            grid-row: 1 / 2;
+            margin-bottom: 5rem;
+        }
 
         &--pic {
             width: 20rem;
