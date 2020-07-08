@@ -417,7 +417,6 @@ body {
 .services__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 40rem;
   grid-column-gap: 3rem;
   padding: 2rem 2rem;
 }
@@ -425,6 +424,7 @@ body {
   color: #fff;
   padding: 2rem;
   transition: all 0.3s;
+  height: 40rem;
 }
 @media only screen and (max-width: 900px) {
   .services__container--wording {
@@ -435,6 +435,7 @@ body {
 }
 .services__container--wording h3 {
   font-size: 4rem;
+  margin-bottom: 3rem;
 }
 .services__container--wording p {
   font-size: 2rem;
@@ -463,6 +464,9 @@ body {
 }
 .services__container--wording-4:hover {
   background-color: #ec4f13;
+}
+.services__container--image {
+  height: 40rem;
 }
 @media only screen and (max-width: 900px) {
   .services__container--image {
